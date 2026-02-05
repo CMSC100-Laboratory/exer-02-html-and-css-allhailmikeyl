@@ -1,105 +1,146 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en"> <!-- LANGUAGE = ENGLISH -->
+	<head>
+		<title>My Portfolio</title> <!-- TITLE ON BAR -->
+		<link rel="stylesheet" href="flex.css">
+		<link rel="icon" type="image/png" href="images/icon.png"> <!-- ICON -->
+	</head>
 
-<head>
-    <title>Sample Web Page</title>
-    <link rel="stylesheet" type="text/css" href="flex.css" />
-    <base target="_blank">
-</head>
+	<body>
+		<!-- HEADER / NAVIGATION BAR -->
+		<header>
+			<nav class="navbar">
+				<!-- WEBSITE TITLE -->
+				<div class="logo-container">
+					<h1 class="logo-text">Mikhail's Portfolio</h1>
+				</div>
+
+				<!-- NAVIGATION LINKS -->
+				<ul class="nav-links">
+					<li><a href="#about">About</a></li>
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#footer">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- SECTIONS -->
+		<section id="about" class="intro-section">
+			<!-- FEATURED PHOTO -->
+			<div class="intro-left">
+				<img src="images/featured-photo.jpg" alt="Featured Photo" class="featured-photo">
+				<h2>Mikhail Adrian Jude S. Perlas</h2>
+				<p class="tagline">Frontend Developer | Software Engineer | Creative Thinker</p>
+			</div>
+
+			<!-- AUTOBIOGRAPHY -->
+			<div class="intro-right">
+				<h2>Autobiography</h2>
+				<p>
+					Hello World! My name is Mikhail Adrian Jude S. Perlas, a graduating BS Computer Science student.
+					I am very passionate in layouting and designs, and I also enjoy learning in the technology field.
+					I have a growing love for anime, astronomy, and photography, as well as learning foreign languages.
+				</p>
+				<p>
+					Throughout my academic journey, I have gained several experience working with basic web technologies
+					such as HTML and CSS. I am also proficient in using Git and GitHub for version control. I have made
+					some projects as well as requirements that applied what I have learned throughout various courses.
+				</p>
+				<p>
+					This website shall serve as my personal portfolio in showcasing my work. And even though, I am at this point 
+					in life, I still reflect in my progress and journey as a learner. I still look forward to continuing
+					to develop my skills and improving. I hope to explore more opportunities with you! ^-^
+				</p>
+			</div>
+		</section>
+
+		<!-- SKILLS -->
+		<section id="skills" class="section">
+			<h2>Skills</h2>
+
+			<div class="skills-container">
+				<!-- FRONTEND -->
+				<div class="skill-group">
+					<div class="group-header">
+						<span class="group-icon">💻</span>
+						<h3>Frontend</h3>
+					</div>
+
+					<div class="skill-tags">
+						<span class="skill-tag">HTML</span>
+						<span class="skill-tag">CSS</span>
+						<span class="skill-tag">JavaScript</span>
+					</div>
+				</div>
+
+				<!-- PROGRAMMING -->
+				<div class="skill-group">
+					<div class="group-header">
+						<span class="group-icon">🧠</span>
+						<h3>Programming</h3>
+					</div>
+
+					<div class="skill-tags">
+						<span class="skill-tag">Python</span>
+						<span class="skill-tag">C</span>
+						<span class="skill-tag">Java</span>
+					</div>
+				</div>
+
+				<!-- TOOLS AND SOFTWARE -->
+				<div class="skill-group">
+					<div class="group-header">
+						<span class="group-icon">🛠️</span>
+						<h3>Tools & Software</h3>
+					</div>
+
+					<div class="skill-tags">
+						<span class="skill-tag">Git & GitHub</span>
+						<span class="skill-tag">Canva</span>
+						<span class="skill-tag">MS Office</span>
+						<span class="skill-tag">VS Code</span>
+					</div>
+				</div>
+			</div>
+		</section>
 
 
-<body class="roboto-300">
+		<!-- PROJECTS -->
+		<section id="projects" class="section">
+			<h2>Previous Projects</h2>
 
-    <nav>
-        <div class="nav_bar">
-            <div class="flex-item" style="flex: 1">
-                <a href="./sample.html">HTML</a>
-            </div>
+			<div class="projects-container">
+				<!-- PROJECT 1 - PYTHON (CMSC 12) -->
+				<div class="project-card">
+					<img src="images/project1.png" alt="Project Image">
+					<h3>Project Title</h3>
+					<p>Short description of your project.</p>
+				</div>
 
-            <div class="flex-item" style="flex: 1">
-                <a href="/css/">CSS</a>
-            </div>
+				<!-- PROJECT 2 - JAVA (CMSC 22)-->
+				<div class="project-card">
+					<img src="images/project2.png" alt="Project Image">
+					<h3>Project Title</h3>
+					<p>Short description of your project.</p>
+				</div>
+			</div>
+		</section>
 
-            <div class="flex-item" style="flex: 1">
-                <a href="/js/">JavaScript</a>
-            </div>
+		<!-- FOOTER -->
+		<footer id="footer">
+			<div class="footer-container">
+				<img src="images/ics-logo.png" alt="ICS Logo" class="footer-logo">
 
-            <div class="flex-item" style="flex: 1">
-                <a href="/python/">Python</a>
-            </div>
-
-        </div>
-    </nav>
-
-    <div class="flex-container">
-        <div class="flex-item" style="flex: 3; order: 1;">
-            <h1>1</h1>
-            <p>This is a paragraph</p>
-        </div>
-
-        <div class="flex-item" style="flex: 3; order: 1;">
-            <h1>2</h1>
-            <p>This is another paragraph</p>
-        </div>
-
-        <div class="flex-item" style="flex: 2; order: 1;">
-            <h1>3</h1>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-        </div>
-
-        <div class="flex-item" style="flex: 4; order: 1;">
-            <h1>4</h1>
-            <p>This is another paragraph</p>
-        </div>
-
-        <div class="flex-item" style="flex: 3; order: 1;">
-            <h1>5</h1>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-        </div>
-
-        <div class="flex-item" style="flex: 1; order: 1;">
-            <h1>6</h1>
-            <p>This is another paragraph</p>
-        </div>
-    </div>
-
-    <div class="flex-container2">
-        <div class="flex-item" style="flex: 3;">
-            <h1>1</h1>
-            <p>This is a paragraph</p>
-        </div>
-        <div class="flex-item" style="flex: 3;">
-            <h1>2</h1>
-            <p>This is another paragraph</p>
-        </div>
-        <div class="flex-item" style="flex: 2;">
-            <h1>3</h1>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-        </div>
-        <div class="flex-item" style="flex: 4;">
-            <h1>4</h1>
-            <p>This is another paragraph</p>
-        </div>
-        <div class="flex-item" style="flex: 3;">
-            <h1>5</h1>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-        </div>
-        <div class="flex-item" style="flex: 1;">
-            <h1>6</h1>
-            <p>This is another paragraph</p>
-        </div>
-    </div>
-</body>
-
+				<div class="footer-info">
+					<p>📍 Los Baños, Laguna, Philippines</p>
+					<p>📧 msperlas@up.edu.ph ✨ https://github.com/allhailmikeyl </p>
+					<p>© 2026 Mikhail Adrian Jude S. Perlas</p>
+					<a href="#">Back to Top</a>
+				</div>
+			</div>
+		</footer>
+		
+	</body>
 </html>

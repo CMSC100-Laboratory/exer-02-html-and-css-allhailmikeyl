@@ -1,58 +1,197 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
-
-.roboto-300 {
-    font-family: "Roboto", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-    font-variation-settings:
-        "wdth" 100;
+/* GENERAL */
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background-color: #ffe5ec;
+    color: #333;
 }
 
-div h1,
-div a,
-div p {
-    padding: 5px 5px;
+.section {
+    padding: 20px 40px;
 }
 
-.flex-container {
+.section h2 {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* NAVIGATION BAR */
+.navbar {
     display: flex;
-    border-style: solid;
-    border-width: 10px;
-    border-color: rgb(159, 221, 155);
-    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff8fab;
+    padding: 15px 30px;
+    flex-wrap: wrap;
 }
 
-.nav_bar {
+.logo-container {
     display: flex;
-    border-style: solid;
-    border-width: 10px;
-    border-color: rgb(218, 239, 142);
-    flex-direction: row;
+    align-items: center;
+    gap: 10px;
 }
 
-.flex-container2 {
+.logo-text {
+    color: white;
+    margin: 0;
+}
+
+.nav-links {
+    list-style: none;
     display: flex;
-    border-style: solid;
-    border-width: 10px;
-    border-color: rgb(69, 171, 135);
-    flex-direction: row;
+    gap: 20px;
 }
 
-.flex-item:hover {
-    flex: 4;
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
 }
 
-.flex-item {
-    flex: 1;
-    transition: flex 2s;
-    border-style: solid;
-    border-width: 6px;
-    border-color: rgb(195, 158, 158);
+.nav-links a:hover {
+    text-decoration: underline;
 }
 
-a {
-    color: rgb(75, 137, 219);
+/* INTRO SECTION */
+.intro-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 60px 20px;
+    background-color: #ffc2d1;
+    flex-wrap: wrap;
+}
 
+.intro-left {
+    text-align: center;
+    max-width: 400px;
+}
+
+.featured-photo {
+    width: 200px;
+    border: 5px solid #fb6f92;
+    border-radius: 5%;
+}
+
+.tagline {
+    font-style: italic;
+}
+
+.intro-right {
+    max-width: 500px;
+    text-align: justify;
+}
+
+/* SKILLS */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.skill-group {
+    background-color: #ffb3c6;
+    padding: 25px;
+    border-radius: 18px;
+    width: 260px;
+}
+
+.group-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.group-icon {
+    font-size: 24px;
+}
+
+.skill-group h3 {
+    margin: 0;
+    font-weight: bold;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.skill-tag {
+    background-color: #ffc2d1;
+    padding: 8px 14px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+.skill-tag:hover {
+    background-color: #fb6f92;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+    cursor: default;
+}
+
+/* PROJECTS */
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background-color: #ffc2d1;
+    padding: 20px;
+    width: 450px;
+    border-radius: 15px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+/* FOOTER */
+footer {
+    background-color: #fb6f92;
+    color: white;
+    padding: 25px;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.footer-logo {
+    width: 100px;
+    height: auto;
+}
+
+.footer-info p {
+    margin: 5px 0;
+    line-height: 1.6;
+}
+
+.footer-info a {
+    color: white;
+    text-decoration: underline;
 }
