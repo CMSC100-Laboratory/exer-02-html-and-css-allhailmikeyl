@@ -16,4 +16,8 @@
 - Ta-da! Access the website provided by GitHub ^^
 
 ## Key Takeaways on the Exercise
-- 
+- I learned how to create GitHub Pages and how to deploy a simple website using HTML and CSS
+- I became more familiar with git commands through this exercise
+- I understood my capabilities in web designing when under pressure due to time constraints
+- I feel I can still do and design better if given the chance AND more time
+- Designing is both fun and stressful :<
