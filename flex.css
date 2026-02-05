@@ -152,6 +152,7 @@ body {
     padding: 20px;
     width: 450px;
     border-radius: 15px;
+    text-align: justify;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
